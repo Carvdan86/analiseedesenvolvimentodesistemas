@@ -32,8 +32,13 @@ int main()
         int resultado = numero * multiplicador;
     
         printf ("%d x %d = %d\n",numero, multiplicador, resultado);
-    
+        
     }
+        int acrescimo = 2;
+        int num1 = numeroescolhido + acrescimo;
+        int num2 = num1 + acrescimo;
+        int num3 = num2 + acrescimo;
+        printf ("Os próximos 3 números com contagem de dois em dois são: %d, %d e %d", num1, num2,num3);
         break;
         
         default:
@@ -41,12 +46,6 @@ int main()
         break;
     }
     
-        int acrescimo = 2;
-        int num1 = numeroescolhido + acrescimo;
-        int num2 = num1 + acrescimo;
-        int num3 = num2 + acrescimo;
-        
-        printf ("Os próximos 3 números com contagem de dois em dois são: %d, %d e %d", num1, num2,num3);
-        
+   
     return 0;
 }
