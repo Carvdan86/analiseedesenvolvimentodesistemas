@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    int decisao;
+    printf("Olá, seja bem vindo! Vamos jogar?\n ");
+    printf("(1) Sim \t (2) Não\n");
+    scanf("%d", &decisao);
+    
+    int numeroescolhido;
+    int anterior;
+    int posterior;
+    
+    switch (decisao) {
+        
+        case 1 :
+        printf ("Digite o número escolhido: ");
+        scanf ("%d", &numeroescolhido);
+        int antecessor = numeroescolhido - 1;
+        int sucessor = numeroescolhido + 1;
+    
+        printf ("O antecessor do número escolhido é: %d\n", antecessor);
+        printf ("O sucessor do número escolhido é: %d\n", sucessor);
+    
+        int numero = numeroescolhido;
+        int multiplicador;
+        printf ("A tabuada de %d é: \n", numero);
+    
+        for (multiplicador = 1; multiplicador <=10; multiplicador++) {
+        
+        int resultado = numero * multiplicador;
+    
+        printf ("%d x %d = %d\n",numero, multiplicador, resultado);
+    
+    }
+        break;
+        
+        default:
+        printf ("Que pena que você não quer jogar! Nos vemos numa próxima oportunidade.");
+        break;
+    }
+    
+        int acrescimo = 2;
+        int num1 = numeroescolhido + acrescimo;
+        int num2 = num1 + acrescimo;
+        int num3 = num2 + acrescimo;
+        
+        printf ("Os próximos 3 números com contagem de dois em dois são: %d, %d e %d", num1, num2,num3);
+        
+    return 0;
+}
